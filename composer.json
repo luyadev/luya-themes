@@ -1,0 +1,13 @@
+{
+    "name": "boehsermoe/blockcollection",
+    "type": "luya-extension",
+    "require": {
+        "luyadev/luya-module-cms": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "boehsermoe",
+            "email": "boehsermoe@me.com"
+        }
+    ]
+}
