@@ -1,5 +1,5 @@
 {
-    "name": "boehsermoe/blockcollection",
+    "name": "boehsermoe/luya-blockcollection",
     "type": "luya-extension",
     "require": {
         "luyadev/luya-module-cms": "^1.0.0"
