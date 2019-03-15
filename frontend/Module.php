@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\blockcollection\frontend;
+namespace boehsermoe\blockcollection\frontend;
 
 use Yii;
 

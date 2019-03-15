@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\blockcollection\admin;
+namespace boehsermoe\blockcollection\admin;
 
 /**
  * Blockcollection Admin Module.
