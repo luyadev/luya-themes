@@ -2,6 +2,8 @@
 
 namespace app\modules\blockcollection\frontend;
 
+use Yii;
+
 /**
  * Blockcollection Admin Module.
  *
@@ -12,5 +14,11 @@ namespace app\modules\blockcollection\frontend;
  */
 class Module extends \luya\base\Module
 {
+    public static function onLoad()
+    {
+        Yii::setAlias('@blockcollection', static::staticBasePath());
+
+        parent::onLoad();
+    }
 
 }
