@@ -9,5 +9,8 @@
             "name": "boehsermoe",
             "email": "boehsermoe@me.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {"boehsermoe\\blockcollection\\": ""}
+    }
 }
