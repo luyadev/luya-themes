@@ -26,12 +26,14 @@ $buttonName = $this->varValue('buttonName');
     <?php echo Html::tag('h2', $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
     <div class="container">
         <header>
-            <div class="image object">
-                <?php echo Html::img($image->source, [
-                    'width' => $image->resolutionWidth,
-                    'height' => $image->resolutionHeight
-                ]) ?>
-            </div>
+            <?php if ($image) : ?>
+                <div class="image object">
+                    <?php echo Html::img($image->source, [
+                        'width' => $image->resolutionWidth,
+                        'height' => $image->resolutionHeight
+                    ]) ?>
+                </div>
+            <?php endif ?>
 
             <?php echo Html::tag('p', $subTitle, ['class' => 'style1']) ?>
         </header>
