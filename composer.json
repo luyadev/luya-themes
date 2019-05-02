@@ -13,5 +13,8 @@
     ],
     "autoload": {
         "psr-4": {"boehsermoe\\blockcollection\\": ""}
+    },
+    "require-dev": {
+        "unglue/client": "^1.4"
     }
 }

@@ -1,0 +1,16 @@
+{
+
+  "css": [
+    "../resources/scss/blockcollection.scss"
+  ],
+
+  "js": [
+    "../resources/js/main.js"
+  ],
+
+  "options": {
+    "compress": false,
+    "maps": true
+  }
+
+}

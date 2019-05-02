@@ -63,6 +63,13 @@ class BannerBlock extends PhpBlock
 				['var' => 'buttonName', 'label' => 'Buttonname', 'type' => self::TYPE_TEXT],
 				['var' => 'image', 'label' => 'Image', 'type' => self::TYPE_IMAGEUPLOAD],
             ],
+            'cfgs' => [
+                ['var' => 'background-type', 'label' => 'Hintergrund-Typ', 'type' => self::TYPE_SELECT, 'initValue' => 'image', 'options' => [
+                    ['value' => 'image', 'label' => 'Bild'],
+                    ['value' => 'video', 'label' => 'Video'],
+                ]],
+                ['var' => 'background-src', 'label' => 'Hintergrund', 'type' => self::TYPE_TEXT],
+            ]
         ];
     }
 

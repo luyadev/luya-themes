@@ -11,6 +11,6 @@
 
 ?>
 
-<header id="header" class="wrapper">
+<header id="header-teaser" class="wrapper">
     <?php echo $this->placeholderValue('elements') ?>
 </header>

@@ -1,5 +1,5 @@
 <section id="footer" class="wrapper">
-    <div class="title">The Rest Of It</div>
+<!--    <div class="title">Footer</div>-->
     <div class="container">
         <header class="style1">
             <h2>Ipsum sapien elementum portitor?</h2>
@@ -72,7 +72,7 @@
                             <section>
                                 <h3 class="icon fa-phone">Phone</h3>
                                 <p>
-                                    (000) 555-0000
+                                    (+49) 1234/56789
                                 </p>
                             </section>
                         </div>
@@ -83,7 +83,8 @@
         </div>
         <div id="copyright">
             <ul>
-                <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li><a href="/impressum">Impressum</a></li>
+                <li><a href="/datenschutz">Datenschutz</a></li>
             </ul>
         </div>
     </div>
