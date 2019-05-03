@@ -7,7 +7,8 @@
 // ==================================================
 // BOOTSTRAP
 // Import whole bootstrap project
-@import "../../../vendor/twbs/bootstrap/scss/bootstrap";
+//@import "../../../vendor/twbs/bootstrap/scss/bootstrap";
+@import "../../../../../twbs/bootstrap/scss/bootstrap";
 // Import bootstrap grid
 // @import "../../vendor/twbs/bootstrap/scss/bootstrap-grid";
 // Import bootstrap reboot
@@ -711,6 +712,10 @@ ul.actions {
   position: relative;
   padding: 6em 0 9em 0;
 
+  .wrapper {
+    margin-top: 80px;
+  }
+
   .title {
     position: absolute;
     top: 0;
@@ -814,8 +819,6 @@ ul.actions {
   @include vendor('justify-content', 'center');
   position: relative;
   height: 24em;
-  background: url('images/banner.jpg') center center;
-  background-size: cover;
   padding: 0;
   font-size: 1.5em;
 
@@ -887,9 +890,9 @@ ul.actions {
   z-index: 1;
 
   > ul {
+    background: rgba(0, 0, 0, 0.2);
     display: inline-block;
-    border-radius: 0.35em;
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.8);
     padding: 0 1.5em 0 1.5em;
 
     > li {
@@ -928,6 +931,7 @@ ul.actions {
       &.active {
         > a, > span {
           color: #fff;
+          font-weight: bold;
         }
       }
     }
@@ -940,6 +944,7 @@ ul.actions {
   left: 1.5em;
   width: 150px;
   margin: 15px 0;
+  z-index: 1;
 }
 
 .dropotron {

@@ -13,7 +13,7 @@ use luya\helpers\Html;
 <nav id="nav">
     <ul>
         <?php foreach (Yii::$app->menu->find()->container('default')->root()->all() as $item): ?>
-            <li>
+            <li class="<?php echo $item->isActive ? 'active' : '' ?>">
                 <?php if ($item->hasChildren) : ?>
                     <?php echo Html::a($item->title, $item->link, ['class' => $item->alias == Yii::$app->menu->current->alias ]) ?>
 
