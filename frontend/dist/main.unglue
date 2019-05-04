@@ -5,6 +5,8 @@
   ],
 
   "js": [
+    "../resources/js/jquery.dropotron.min.js",
+    "../resources/js/util.js",
     "../resources/js/main.js"
   ],
 
