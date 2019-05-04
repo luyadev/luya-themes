@@ -7,6 +7,7 @@ class ResourcesAsset extends \luya\web\Asset
     public $sourcePath = '@blockcollection/dist';
     
     public $css = [
+        'font-awesome.min.css',
         'main.css'
     ];
 
