@@ -6,7 +6,7 @@ use luya\helpers\Html;
  */
 ?>
 <div class="nav-logo">
-    <?php echo Html::img('https://placeholder.pics/svg/150x50/4B82D2/FFFFFF-4B82D2/logo', ['width' => '150'])?>
+    <?php echo Html::img('https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.jpg', ['width' => '150'])?>
 </div>
 
 <!-- Nav -->
