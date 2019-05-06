@@ -455,7 +455,7 @@ button,
   line-height: 4em;
 
   &:hover {
-    background-color: #f98780;
+    background-color: #5890e4;
   }
 
   &.large {
@@ -464,15 +464,15 @@ button,
   }
 
   &.style1 {
-    background: #e97770 url('images/overlay.png');
+    background: rgba(75, 130, 210, 1) url('images/overlay.png');
     color: #fff;
 
     &:hover {
-      background-color: #f98780;
+      background-color: #5890e4;
     }
 
     &:active {
-      background-color: #d96760;
+      background-color: #3f6aab;
     }
   }
 
@@ -611,13 +611,13 @@ ul.actions {
   }
 
   h3 {
-    color: #e97770 !important;
+    color: rgb(75, 130, 210);
     margin: -0.35em 0 0.75em 0;
     font-size: 1.15em;
     letter-spacing: 0.05em;
 
     &:before {
-      display: block;
+      display: inline-block;
       color: #fff;
       background: #2f333b url('images/overlay.png');
       border-radius: 2.5em;
@@ -626,8 +626,8 @@ ul.actions {
       height: 2.5em;
       line-height: 2.5em;
       margin-right: 0.75em;
-      position: absolute;
-      left: 0;
+      //position: absolute;
+      //left: 0;
       margin-top: -0.5em;
     }
   }
@@ -653,7 +653,7 @@ ul.actions {
   &:before {
     display: inline-block;
     font-family: FontAwesome;
-    font-size: 1.25em;
+    font-size: 1em;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
@@ -727,10 +727,10 @@ ul.actions {
     letter-spacing: 0.25em;
     font-size: 0.9em;
     width: 25em;
-    height: 3.25em;
-    top: -3.25em;
+    height: 2.25em;
+    top: -2.25em;
     line-height: 3.25em;
-    margin-bottom: -3.25em;
+    margin-bottom: -2.25em;
     margin-left: -12.5em;
     padding-top: 0.5em;
     background-color: inherit;
@@ -758,12 +758,12 @@ ul.actions {
   }
 
   &.style1 {
-    background: #e97770 url('images/overlay.png');
+    background: rgb(75, 130, 210) url('images/overlay.png');
     color: #eee;
     color: rgba(255, 255, 255, 0.75);
 
     .title {
-      background: inherit url('images/overlay.png');
+      background: inherit;
       color: #fff;
     }
 
@@ -789,12 +789,18 @@ ul.actions {
       color: #484d55;
     }
 
-    .image {
+    .image > img {
       border: solid 10px #fff;
     }
   }
 
   > .container {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 50px;
+  }
+
+  .wrapper > .container {
     padding-bottom: 100px;
   }
 }
@@ -832,6 +838,10 @@ ul.actions {
     background: url('images/overlay.png');
   }
 
+  > * {
+    z-index: 1;
+  }
+
   .homepage & {
     height: 35rem;
   }
@@ -841,7 +851,7 @@ ul.actions {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: -1;
+    z-index: 0;
   }
 
   h1 {
@@ -944,7 +954,7 @@ ul.actions {
   left: 1.5em;
   width: 150px;
   margin: 15px 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropotron {
@@ -1026,7 +1036,6 @@ ul.actions {
 
   p.style3 {
     font-size: 1.1em;
-    width: 48em;
     margin: 0 auto;
   }
 }
@@ -1064,7 +1073,7 @@ ul.actions {
     text-align: center;
 
     h3 {
-      color: #e97770;
+      color: rgb(75, 130, 210);
       margin: 0 0 0.75em 0;
       font-size: 1.15em;
       letter-spacing: 0.05em;
@@ -1076,6 +1085,7 @@ ul.actions {
 
 #main {
   background: #fff;
+  padding-bottom: 0;
 }
 
 /* Footer */
@@ -1416,7 +1426,7 @@ ul.actions {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         content: '\f0c9';
-        font-size: 14px;
+        font-size: 18px;
         position: absolute;
         top: 6px;
         left: 6px;
@@ -1640,10 +1650,10 @@ ul.actions {
     .title {
       font-size: 0.9em;
       width: 18em;
-      height: 2.5em;
-      top: -2.5em;
+      height: 1.5em;
+      top: -1.5em;
       line-height: 2.5em;
-      margin-bottom: -2.5em;
+      margin-bottom: -1.5em;
       margin-left: -9em;
       padding-top: 0.5em;
 
@@ -1653,6 +1663,14 @@ ul.actions {
         bottom: -15px;
         background-size: 100% 100%;
       }
+    }
+
+    > .container {
+      padding-bottom: 0;
+    }
+
+    .wrapper > .container {
+      padding-bottom: 0;
     }
   }
 
@@ -1690,8 +1708,6 @@ ul.actions {
 
   .wrapper {
     text-align: center;
-    padding-right: 2em;
-    padding-left: 2em;
     padding-bottom: 5em;
     margin: 0 auto;
 
