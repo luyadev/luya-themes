@@ -1,24 +1,23 @@
+<?php
+/**
+ * @var \luya\web\View $this
+ */
+?>
 <section id="footer" class="wrapper">
 <!--    <div class="title">Footer</div>-->
     <div class="container">
-        <header class="style1">
-            <h2>Ipsum sapien elementum portitor?</h2>
-            <p>
-                Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-                Nam pharetra laoreet imperdiet volutpat etiam feugiat.
-            </p>
-        </header>
+
         <div class="row">
-            <div class="col-6 col-12-medium">
+            <div class="col-12 col-md-6">
 
                 <!-- Contact Form -->
                 <section>
                     <form method="post" action="#">
                         <div class="row gtr-50">
-                            <div class="col-6 col-12-small">
+                            <div class="col-12 col-sm-6">
                                 <input type="text" name="name" id="contact-name" placeholder="Name" />
                             </div>
-                            <div class="col-6 col-12-small">
+                            <div class="col-12 col-sm-6">
                                 <input type="text" name="email" id="contact-email" placeholder="Email" />
                             </div>
                             <div class="col-12">
@@ -35,14 +34,14 @@
                 </section>
 
             </div>
-            <div class="col-6 col-12-medium">
+            <div class="col-12 col-md-6">
 
                 <!-- Contact -->
                 <section class="feature-list small">
                     <div class="row">
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
-                                <h3 class="icon fa-home">Mailing Address</h3>
+                                <h3 class="icon fa-home">Adresse</h3>
                                 <p>
                                     Untitled Corp<br />
                                     1234 Somewhere Rd<br />
@@ -50,7 +49,7 @@
                                 </p>
                             </section>
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
                                 <h3 class="icon fa-comment">Social</h3>
                                 <p>
@@ -60,7 +59,7 @@
                                 </p>
                             </section>
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
                                 <h3 class="icon fa-envelope">Email</h3>
                                 <p>
@@ -68,7 +67,7 @@
                                 </p>
                             </section>
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
                                 <h3 class="icon fa-phone">Phone</h3>
                                 <p>

@@ -5,7 +5,9 @@
 ?>
 <section id="header" class="wrapper">
     <!-- Intro -->
-    <?= $placeholders['intro'] ?>
+    <div class="header-container">
+        <?= $placeholders['intro'] ?>
+    </div>
 </section>
 
 <!-- Main -->

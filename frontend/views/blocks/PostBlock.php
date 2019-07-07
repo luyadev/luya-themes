@@ -24,30 +24,35 @@ $linkName = $this->varValue('linkName') ?: 'Mehr';
 $image = $this->extraValue('image');
 
 if ($image) {
-	$lazyImage = LazyLoad::widget([
+    $image = LazyLoad::widget([
 		'src' => $image->source,
 		'width' => $image->resolutionWidth,
 		'height' => $image->resolutionHeight,
 	]);
-	// Todo: LazyLoad ist buggy
-	$lazyImage = Html::img($image->source, [
-		'width' => $image->resolutionWidth,
-		'height' => $image->resolutionHeight,
-    ]);
+//	// Todo: LazyLoad ist buggy
+//	$lazyImage = Html::img($image->source, [
+//		'width' => $image->resolutionWidth,
+//		'height' => $image->resolutionHeight,
+//    ]);
 }
 ?>
 
 <div class="<?php echo $this->cfgValue('htmlClass', 'post') ?>">
     <article>
-        <div class="image <?php echo $this->cfgValue('imageHtmlClass', 'centered') ?>">
-            <?php echo $lazyImage ?>
-        </div>
+        <?php if ($image) : ?>
+            <div class="image <?php echo $this->cfgValue('imageHtmlClass', 'centered') ?>">
+                <?php echo $image ?>
+            </div>
+        <?php endif ?>
         <header>
             <h3 data-track-content data-content-name="<?php echo Html::encode($title) ?>"><?php echo Html::encode($title) ?></h3>
         </header>
-        <p>
-            <?php echo $text ?>
-        </p>
+
+        <?php if ($text) : ?>
+            <p>
+                <?php echo $text ?>
+            </p>
+        <?php endif ?>
 
         <?php if ($url) : ?>
             <ul class="actions">

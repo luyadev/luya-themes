@@ -23,7 +23,10 @@ $buttonName = $this->varValue('buttonName');
 ?>
 
 <section class="wrapper style1">
-    <?php echo Html::tag('h2', $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
+    <?php if ($title) : ?>
+        <?php echo Html::tag('h2', $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
+    <?php endif ?>
+
     <div class="container">
         <header>
             <?php if ($image) : ?>
