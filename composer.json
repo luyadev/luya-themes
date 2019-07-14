@@ -2,8 +2,8 @@
     "name": "boehsermoe/luya-blockcollection",
     "type": "luya-extension",
     "require": {
-        "luyadev/luya-module-cms": "^1.0.0",
-        "twbs/bootstrap": "^4.0.0"
+        "luyadev/luya-module-cms": "^1.0",
+        "twbs/bootstrap": "^4.0"
     },
     "authors": [
         {
