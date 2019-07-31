@@ -16,5 +16,10 @@
     },
     "require-dev": {
         "unglue/client": "^1.4"
+    },
+    "extra": {
+        "luya": {
+            "themes": ["frontend/"]
+        }
     }
 }
