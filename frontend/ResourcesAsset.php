@@ -1,10 +1,10 @@
 <?php
 
-namespace boehsermoe\blockcollection\frontend\assets;
+namespace boehsermoe\blockcollection\frontend;
 
 class ResourcesAsset extends \luya\web\Asset
 {
-    public $sourcePath = '@blockcollection/dist';
+    public $sourcePath = '@escape-velocity/dist';
     
     public $css = [
         'font-awesome.min.css',

@@ -1,6 +1,6 @@
 {
     "name": "boehsermoe/luya-blockcollection",
-    "type": "luya-extension",
+    "type": "luya-theme",
     "require": {
         "luyadev/luya-module-cms": "^2.0|^1.0",
         "twbs/bootstrap": "^4.0"
