@@ -2,7 +2,7 @@
 /**
  * @var $this \luya\web\View
  */
-use \boehsermoe\blockcollection\frontend\ResourcesAsset;
+use boehsermoe\blockcollection\frontend\ResourcesAsset;
 
 ResourcesAsset::register($this);
 
