@@ -14,7 +14,7 @@ class BlockCollectionGroup extends BlockGroup
 {
     public function identifier()
     {
-        return 'block-collection-group';
+        return 'theme-collection-group';
     }
     
     public function label()

@@ -23,15 +23,16 @@ $linkName = $this->varValue('linkName') ?: 'Mehr';
 
 /** @var \luya\admin\image\Item $backgroundImg */
 $backgroundImg = $this->extraValue('backgroundImage');
-if ($backgroundImg) {
-	$style = "background-image: url('$backgroundImg->source');";
-} else {
-    $style = "";
-}
+$style = $backgroundImg ? ['background-image' => "url($backgroundImg->source)"] : [];
 ?>
-<article class="feature-list" style="<?php echo $style ?>">
-	<a href="<?php echo $link->getHref() ?>" target="<?php echo $link->getTarget() ?>">
-	    <div class="wrapper">
+<article class="feature-list">
+    <?php echo Html::beginTag('a', [
+    		'href' => $link->getHref(),
+    		'target' => $link->getTarget(),
+    		'style' => $style
+        ])?>
+	
+	    <div class="inner">
 	        <h3 class="icon <?php echo "fa-$iconClass"?>">
 	            <?php echo Html::encode($title) ?>
 	        </h3>
@@ -39,6 +40,7 @@ if ($backgroundImg) {
 	            <?php echo Html::encode(trim($text)) ?>
 	        </p>
 	    </div>
-	</a>
+    
+    <?php echo Html::endTag('a') ?>
 </article>
 

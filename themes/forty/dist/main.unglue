@@ -7,6 +7,8 @@
   "js": [
     "../resources/js/jquery.dropotron.min.js",
     "../resources/js/util.js",
+    "../resources/js/breakpoints.min.js",
+    "../resources/js/browser.min.js",
     "../resources/js/forty.js"
   ],
 

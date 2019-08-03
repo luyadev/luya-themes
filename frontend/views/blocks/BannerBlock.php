@@ -24,33 +24,35 @@ $buttonName = $this->varValue('buttonName');
 $titleHeading = $this->cfgValue('title-heading', 'h2');
 ?>
 
-<div class="wrapper style1">
-    <?php if ($title) : ?>
-        <?php echo Html::tag($titleHeading, $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
-    <?php endif ?>
-
-    <div class="container">
-        <header>
-            <?php if ($image) : ?>
-                <div class="image object">
-                    <?php echo Html::img($image->source, [
-                        'width' => $image->resolutionWidth,
-                        'height' => $image->resolutionHeight
-                    ]) ?>
-                </div>
-            <?php endif ?>
-
-            <?php echo Html::tag('p', $subTitle, ['class' => 'style1']) ?>
-        </header>
+<div class="banner style1">
+   <div class="inner">
+        <?php if ($title) : ?>
+            <?php echo Html::tag($titleHeading, $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
+        <?php endif ?>
     
-        <?php if ($text) : ?>
-            <?php echo Html::tag('p', $text, ['class' => 'style3']) ?>
-        <?php endif ?>
-
-        <?php if ($link) : ?>
-            <ul class="actions">
-                <li><?php echo Html::a($buttonName ?: $link->getHref(), $link->getHref(), ['target' => $link->getTarget(), 'class' => 'button style3 large'])?></li>
-            </ul>
-        <?php endif ?>
-    </div>
+        <div class="container">
+            <header>
+                <?php if ($image) : ?>
+                    <div class="image object">
+                        <?php echo Html::img($image->source, [
+                            'width' => $image->resolutionWidth,
+                            'height' => $image->resolutionHeight
+                        ]) ?>
+                    </div>
+                <?php endif ?>
+    
+                <?php echo Html::tag('p', $subTitle, ['class' => 'style1']) ?>
+            </header>
+        
+            <?php if ($text) : ?>
+                <?php echo Html::tag('p', $text, ['class' => 'style3']) ?>
+            <?php endif ?>
+    
+            <?php if ($link) : ?>
+                <ul class="actions">
+                    <li><?php echo Html::a($buttonName ?: $link->getHref(), $link->getHref(), ['target' => $link->getTarget(), 'class' => 'button style3 large'])?></li>
+                </ul>
+            <?php endif ?>
+        </div>
+   </div>
 </div>

@@ -55,7 +55,7 @@
 			position: relative;
 			z-index: 2;
 
-			.wrapper {
+			.inner {
 				width: 100%;
 			}
 
@@ -75,7 +75,7 @@
 				}
 			}
 
-			.container {
+			.content {
 				//@include vendor('display', 'flex');
 				//@include vendor('align-items', 'center');
 				//margin: 0 0 _size(element-margin) 0;
@@ -117,7 +117,7 @@
 				opacity: 1.0;
 			}
 
-			> .wrapper {
+			> .inner {
 				@include vendor('filter', 'blur(0.125em)');
 				@include vendor('transform', 'translateX(-0.5em)');
 				opacity: 0;
@@ -140,8 +140,8 @@
 				font-size: 2em;
 			}
 
-			> .wrapper {
-				.container {
+			> .inner {
+				.content {
 					display: block;
 
 					> * {
@@ -161,8 +161,8 @@
 		@include breakpoint('<=xsmall') {
 			@include padding(4em, 0, (2em, 0, 0, 0));
 
-			> .wrapper {
-				.container {
+			> .inner {
+				.content {
 					p {
 						br {
 							display: none;

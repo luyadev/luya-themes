@@ -110,11 +110,11 @@
 			$body.addClass('is-ie');
 
 	// Scrolly.
-		$('.scrolly').scrolly({
-			offset: function() {
-				return $header.height() - 2;
-			}
-		});
+	// 	$('.scrolly').scrolly({
+	// 		offset: function() {
+	// 			return $header.height() - 2;
+	// 		}
+	// 	});
 
 	// Tiles.
 		var $tiles = $('.tiles > article');
@@ -194,12 +194,12 @@
 
 			$window.on('load', function() {
 
-				$banner.scrollex({
-					bottom:		$header.height() + 10,
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
-				});
+				// $banner.scrollex({
+				// 	bottom:		$header.height() + 10,
+				// 	terminate:	function() { $header.removeClass('alt'); },
+				// 	enter:		function() { $header.addClass('alt'); },
+				// 	leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
+				// });
 
 				window.setTimeout(function() {
 					$window.triggerHandler('scroll');

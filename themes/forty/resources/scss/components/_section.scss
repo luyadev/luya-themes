@@ -12,8 +12,20 @@
 		}
 	}
 
+	article > header,
+	.inner > :first-child {
+		&:after {
+			content: '';
+			background-color: _palette(fg-bold);
+			display: block;
+			height: 2px;
+			margin: 0.325em 0 0.5em 0;
+			width: 100%;
+		}
+	}
+
 	div {
-		&.wrapper {
+		&.inner {
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -23,15 +35,6 @@
 			> :first-child {
 				margin-bottom: 0;
 				width: calc(100% + 0.5em);
-
-				&:after {
-					content: '';
-					background-color: _palette(fg-bold);
-					display: block;
-					height: 2px;
-					margin: 0.325em 0 0.5em 0;
-					width: 100%;
-				}
 			}
 
 			> p {
@@ -58,7 +61,7 @@
 		}
 
 		@include breakpoint('<=small') {
-			&.wrapper {
+			&.inner {
 				> p {
 					br {
 						display: none;

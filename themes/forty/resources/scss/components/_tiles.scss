@@ -39,12 +39,14 @@
 				@include padding(4em, 4em);
 				width: 100%;
 				height: 100%;
+				background: none no-repeat center;
+				background-size: cover;
 
 				.image {
 					display: none;
 				}
 
-				.wrapper {
+				.inner {
 					position: relative;
 					z-index: 3;
 				}
@@ -151,10 +153,13 @@
 
 		@include breakpoint('<=large') {
 			article {
-				@include padding(4em, 3em);
 				height: 30vh;
 				max-height: 30em;
 				min-height: 20em;
+
+				a {
+					@include padding(4em, 3em);
+				}
 			}
 		}
 
@@ -166,10 +171,13 @@
 
 		@include breakpoint('<=small') {
 			article {
-				@include padding(3em, 1.5em);
 				height: 16em;
 				max-height: none;
 				min-height: 0;
+
+				a {
+					@include padding(3em, 1.5em);
+				}
 
 				h3 {
 					font-size: 1.5em;
