@@ -19,7 +19,10 @@
     },
     "extra": {
         "luya": {
-            "themes": ["themes/escapeVelocity"]
+            "themes": [
+                "themes/escapeVelocity",
+                "themes/forty",
+            ]
         }
     }
 }

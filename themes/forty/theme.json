@@ -1,0 +1,9 @@
+{
+    "name": "forty",
+    "parentTheme": null,
+    "pathMap": [
+        "@blockcollection/views"
+    ],
+    "description": null,
+    "image": null
+}
