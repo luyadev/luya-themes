@@ -6,9 +6,9 @@ use luya\helpers\Html;
  */
 ?>
 
-<!-- Header -->
-<header id="header" class="alt">
-	<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+<!-- Logo -->
+<header id="logo" class="alt">
+	<a href="/" class="logo"><strong><?php echo Yii::$app->siteTitle ?></strong> <span>partner in service, event & music</span></a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>

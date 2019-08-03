@@ -3,88 +3,72 @@
  * @var \luya\web\View $this
  */
 ?>
-<section id="footer" class="wrapper">
-<!--    <div class="title">Footer</div>-->
-    <div class="container">
 
-        <div class="row">
-            <div class="col-12 col-md-6">
-
-                <!-- Contact Form -->
-                <section>
-                    <form method="post" action="#">
-                        <div class="row gtr-50">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="name" id="contact-name" placeholder="Name" />
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="email" id="contact-email" placeholder="Email" />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" class="style1" value="Send" /></li>
-                                    <li><input type="reset" class="style2" value="Reset" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-
-            </div>
-            <div class="col-12 col-md-6">
-
-                <!-- Contact -->
-                <section class="feature-list small">
-                    <div class="row">
-                        <div class="col-6">
-                            <section>
-                                <h3 class="icon fa-home">Adresse</h3>
-                                <p>
-                                    Untitled Corp<br />
-                                    1234 Somewhere Rd<br />
-                                    Nashville, TN 00000
-                                </p>
-                            </section>
-                        </div>
-                        <div class="col-6">
-                            <section>
-                                <h3 class="icon fa-comment">Social</h3>
-                                <p>
-                                    <a href="#">@untitled-corp</a><br />
-                                    <a href="#">linkedin.com/untitled</a><br />
-                                    <a href="#">facebook.com/untitled</a>
-                                </p>
-                            </section>
-                        </div>
-                        <div class="col-6">
-                            <section>
-                                <h3 class="icon fa-envelope">Email</h3>
-                                <p>
-                                    <a href="#">info@untitled.tld</a>
-                                </p>
-                            </section>
-                        </div>
-                        <div class="col-6">
-                            <section>
-                                <h3 class="icon fa-phone">Phone</h3>
-                                <p>
-                                    (+49) 1234/56789
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-        <div id="copyright">
-            <ul>
-                <li><a href="/impressum">Impressum</a></li>
-                <li><a href="/datenschutz">Datenschutz</a></li>
-            </ul>
-        </div>
-    </div>
+<!-- Contact -->
+<section id="contact" class="wrapper">
+	<div class="container">
+		<section>
+			<form method="post" action="#">
+				<div class="fields">
+					<div class="field half">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" />
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" />
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" rows="6"></textarea>
+					</div>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="primary" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon solid alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">information@untitled.tld</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon solid alt fa-phone"></span>
+					<h3>Phone</h3>
+					<span>(000) 000-0000 x12387</span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon solid alt fa-home"></span>
+					<h3>Address</h3>
+					<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+				</div>
+			</section>
+		</section>
+	</div>
 </section>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper">
+	<div class="container">
+		<ul class="icons">
+			<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</div>
+</footer>

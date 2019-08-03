@@ -1,5 +1,5 @@
 {
-    "name": "boehsermoe/luya-blockcollection",
+    "name": "boehsermoe/luya-themecollection",
     "type": "luya-theme",
     "require": {
         "luyadev/luya-module-cms": "^2.0|^1.0",
@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"boehsermoe\\blockcollection\\": ""}
+        "psr-4": {"boehsermoe\\themecollection\\": ""}
     },
     "require-dev": {
         "unglue/client": "^1.4"

@@ -1,13 +1,13 @@
 {
 
   "css": [
-    "../resources/scss/blockcollection.scss"
+    "../resources/scss/escapeVelocity.scss"
   ],
 
   "js": [
     "../resources/js/jquery.dropotron.min.js",
     "../resources/js/util.js",
-    "../resources/js/main.js"
+    "../resources/js/escapeVelocity.js"
   ],
 
   "options": {

@@ -1,6 +1,6 @@
 {
     "name": "Escape Velocity",
     "pathMap": [
-        "@blockcollection/views"
+        "@themecollection/views"
     ]
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace boehsermoe\blockcollection\admin;
+namespace boehsermoe\themecollection\admin;
 
 /**
- * Blockcollection Admin Module.
+ * Themecollection Admin Module.
  *
  * File has been created with `module/create` command. 
  * 

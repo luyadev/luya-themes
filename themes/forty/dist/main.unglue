@@ -1,0 +1,18 @@
+{
+
+  "css": [
+    "../resources/scss/forty.scss"
+  ],
+
+  "js": [
+    "../resources/js/jquery.dropotron.min.js",
+    "../resources/js/util.js",
+    "../resources/js/forty.js"
+  ],
+
+  "options": {
+    "compress": false,
+    "maps": true
+  }
+
+}

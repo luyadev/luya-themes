@@ -1,9 +1,9 @@
 <?php
 
-namespace boehsermoe\blockcollection\frontend\blocks;
+namespace boehsermoe\themecollection\frontend\blocks;
 
+use boehsermoe\themecollection\frontend\blockgroups\BlockCollectionGroup;
 use luya\cms\base\PhpBlock;
-use boehsermoe\blockcollection\frontend\blockgroups\BlockCollectionGroup;
 
 /**
  * Feature Block.
@@ -12,7 +12,7 @@ use boehsermoe\blockcollection\frontend\blockgroups\BlockCollectionGroup;
  */
 class FeatureBlock extends PhpBlock
 {
-    public $module = 'blockcollection';
+    public $module = 'themecollection';
     
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
@@ -61,6 +61,9 @@ class FeatureBlock extends PhpBlock
                 ['var' => 'text', 'label' => 'Text', 'type' => self::TYPE_TEXTAREA, 'placeholder' => '(optional)'],
                 ['var' => 'linkName', 'label' => 'Linkname', 'type' => self::TYPE_TEXT, 'placeholder' => '(optional)'],
             ],
+            'cfgs' => [
+                ['var' => 'background-src', 'label' => 'Hintergrund', 'type' => self::TYPE_IMAGEUPLOAD],
+            ],
         ];
     }
     
@@ -83,7 +86,7 @@ class FeatureBlock extends PhpBlock
      */
     public function getTitle()
     {
-        if ($this->getVarValue('url', 0)['type'] == 1) {
+        if (!$this->getVarValue('title') && $this->getVarValue('url', 0)['type'] == 1) {
             return $this->getLink()->title;
         }
         
@@ -95,11 +98,19 @@ class FeatureBlock extends PhpBlock
      */
     public function getText()
     {
-        if ($this->getVarValue('url', 0)['type'] == 1) {
+        if (!$this->getVarValue('text') && $this->getVarValue('url', 0)['type'] == 1) {
             return $this->getLink()->description;
         }
         
         return $this->getVarValue('text');
+    }
+    
+    /**
+     * @return bool|\luya\admin\image\Item
+     */
+    public function getBackgroundImage()
+    {
+        return \Yii::$app->storage->getImage($this->getCfgValue('background-src'));
     }
     
     /**
@@ -111,6 +122,7 @@ class FeatureBlock extends PhpBlock
             'link' => $this->getLink(),
             'text' => $this->getText(),
             'title' => $this->getTitle(),
+            'backgroundImage' => $this->getBackgroundImage(),
         ];
     }
     

@@ -20,11 +20,13 @@ $subTitle = $this->varValue('subTitle');
 $text = $this->varValue('text');
 $link = $this->extraValue('link');
 $buttonName = $this->varValue('buttonName');
+
+$titleHeading = $this->cfgValue('title-heading', 'h2');
 ?>
 
-<section class="wrapper style1">
+<div class="wrapper style1">
     <?php if ($title) : ?>
-        <?php echo Html::tag('h2', $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
+        <?php echo Html::tag($titleHeading, $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
     <?php endif ?>
 
     <div class="container">
@@ -40,8 +42,10 @@ $buttonName = $this->varValue('buttonName');
 
             <?php echo Html::tag('p', $subTitle, ['class' => 'style1']) ?>
         </header>
-
-        <?php echo Html::tag('p', $text, ['class' => 'style3']) ?>
+    
+        <?php if ($text) : ?>
+            <?php echo Html::tag('p', $text, ['class' => 'style3']) ?>
+        <?php endif ?>
 
         <?php if ($link) : ?>
             <ul class="actions">
@@ -49,4 +53,4 @@ $buttonName = $this->varValue('buttonName');
             </ul>
         <?php endif ?>
     </div>
-</section>
+</div>

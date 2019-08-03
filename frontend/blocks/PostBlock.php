@@ -1,9 +1,9 @@
 <?php
 
-namespace boehsermoe\blockcollection\frontend\blocks;
+namespace boehsermoe\themecollection\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
-use boehsermoe\blockcollection\frontend\blockgroups\BlockCollectionGroup;
+use boehsermoe\themecollection\frontend\blockgroups\BlockCollectionGroup;
 use luya\TagParser;
 
 /**
@@ -13,7 +13,7 @@ use luya\TagParser;
  */
 class PostBlock extends PhpBlock
 {
-    public $module = 'blockcollection';
+    public $module = 'themecollection';
     
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.

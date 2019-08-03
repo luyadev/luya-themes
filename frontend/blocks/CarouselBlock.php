@@ -1,9 +1,9 @@
 <?php
 
-namespace boehsermoe\blockcollection\frontend\blocks;
+namespace boehsermoe\themecollection\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
-use boehsermoe\blockcollection\frontend\blockgroups\BlockCollectionGroup;
+use boehsermoe\themecollection\frontend\blockgroups\BlockCollectionGroup;
 
 /**
  * Carousel Block.
@@ -12,7 +12,7 @@ use boehsermoe\blockcollection\frontend\blockgroups\BlockCollectionGroup;
  */
 class CarouselBlock extends PhpBlock
 {
-    public $module = 'blockcollection';
+    public $module = 'themecollection';
     
     /**
      * @var boolean Choose whether block is a layout/container/segmnet/section block or not, Container elements will be optically displayed

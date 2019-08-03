@@ -1,13 +1,13 @@
 <?php
 
-namespace boehsermoe\blockcollection\frontend;
+namespace boehsermoe\themecollection\frontend;
 
 class ResourcesAsset extends \luya\web\Asset
 {
-    public $sourcePath = '@escape-velocity/dist';
+    public $sourcePath = '@activeTheme/dist';
     
     public $css = [
-        'font-awesome.min.css',
+//        'font-awesome.min.css',
         'main.css'
     ];
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace boehsermoe\blockcollection\frontend;
+namespace boehsermoe\themecollection\frontend;
 
 use Yii;
 
 /**
- * Blockcollection Admin Module.
+ * Themecollection Admin Module.
  *
  * File has been created with `module/create` command. 
  * 
@@ -16,7 +16,7 @@ class Module extends \luya\base\Module
 {
     public static function onLoad()
     {
-        Yii::setAlias('@blockcollection', static::staticBasePath());
+        Yii::setAlias('@themecollection', static::staticBasePath());
 
         parent::onLoad();
     }

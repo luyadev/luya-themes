@@ -2,7 +2,7 @@
 /**
  * @var $this \luya\web\View
  */
-use boehsermoe\blockcollection\frontend\ResourcesAsset;
+use boehsermoe\themecollection\frontend\ResourcesAsset;
 
 ResourcesAsset::register($this);
 
@@ -18,7 +18,7 @@ $this->beginPage();
         <meta name="author" content="boehsermoe">
         <?php $this->head() ?>
     </head>
-    <body class="homepage is-preload">
+    <body class="homepage">
     <?php $this->beginBody() ?>
 
         <div id="wrapper">
