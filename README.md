@@ -1,7 +1,10 @@
 # Themecollection Module
  
-Collection of blocks with 
- 
+Collection of blocks with some different themes.
+
+**Examples**
++ [Forty](http://forty.bennetklarhoelter.de/)
+
 ## Installation
 
 In order to add the modules to your project go into the modules section of your config:
