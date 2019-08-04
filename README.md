@@ -3,7 +3,12 @@
 Collection of blocks with some different themes.
 
 **Examples**
+
 + [Forty](http://forty.bennetklarhoelter.de/)
+
+Login: mail@demo.de
+
+Password: luya
 
 ## Installation
 
