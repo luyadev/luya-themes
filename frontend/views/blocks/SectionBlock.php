@@ -10,19 +10,20 @@
 
 use yii\helpers\Html;
 
-
-
 $elements = $this->placeholderValue('elements');
-$htmlClass = [$this->cfgValue('htmlClass', 'container')];
 $containerHtmlClass = [$this->cfgValue('containerHtmlClass')];
 
-$useFlexContainer = $this->varValue('useFlexContainer') == "true";
-if ($useFlexContainer) {
+if ($this->varValue('useFlexContainer')) {
     $containerHtmlClass[] = 'container-flex';
 }
 
 $content = Html::tag('div', $elements, ['class' => $containerHtmlClass]);
+
+if ($this->varValue('disableWrapper')) {
+    echo $content;
+} else {
+    $htmlClass = [$this->cfgValue('htmlClass','container')];
+    
+    echo Html::tag('div', $content, ['class' => $htmlClass]);
+}
 ?>
-
-<?php echo Html::tag('div', $content, ['class' => $htmlClass])?>
-

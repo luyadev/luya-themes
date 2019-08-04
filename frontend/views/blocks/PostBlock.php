@@ -45,12 +45,12 @@ if ($image) {
             </div>
         <?php endif ?>
         <header>
-            <h3 data-track-content data-content-name="<?php echo Html::encode($title) ?>"><?php echo Html::encode($title) ?></h3>
+            <?php echo Html::tag($this->cfgValue('title-heading', 'h2'), Html::encode($title))?>
         </header>
 
         <?php if ($text) : ?>
             <p>
-                <?php echo $text ?>
+                <?php echo Html::encode($text) ?>
             </p>
         <?php endif ?>
 

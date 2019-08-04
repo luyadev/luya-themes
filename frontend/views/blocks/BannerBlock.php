@@ -24,13 +24,17 @@ $buttonName = $this->varValue('buttonName');
 $titleHeading = $this->cfgValue('title-heading', 'h2');
 ?>
 
+<?php echo Html::beginTag('div', [
+		'class' => 'banner style1',
+		'style' => ['background' => $this->extraValue('background')],
+	]) ?>
 <div class="banner style1">
    <div class="inner">
         <?php if ($title) : ?>
-            <?php echo Html::tag($titleHeading, $title, ['class' => 'title', 'data-track-content' => true, 'data-content-name' => Html::encode($title)]) ?>
+            <?php echo Html::tag($titleHeading, Html::encode($title), ['class' => 'title']) ?>
         <?php endif ?>
     
-        <div class="container">
+        <div class="content">
             <header>
                 <?php if ($image) : ?>
                     <div class="image object">
@@ -41,7 +45,9 @@ $titleHeading = $this->cfgValue('title-heading', 'h2');
                     </div>
                 <?php endif ?>
     
-                <?php echo Html::tag('p', $subTitle, ['class' => 'style1']) ?>
+                <?php if ($subTitle) : ?>
+                    <?php echo Html::tag('p', Html::encode($subTitle), ['class' => 'style1']) ?>
+                <?php endif ?>
             </header>
         
             <?php if ($text) : ?>

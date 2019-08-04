@@ -69,11 +69,12 @@ class BannerBlock extends PhpBlock
                     'type' => self::TYPE_SELECT,
                     'initValue' => 'image',
                     'options' => [
+                        ['value' => 'color', 'label' => 'Farbe'],
                         ['value' => 'image', 'label' => 'Bild'],
                         ['value' => 'video', 'label' => 'Video'],
                     ],
                 ],
-                ['var' => 'background-src', 'label' => 'Hintergrund', 'type' => self::TYPE_TEXT],
+                ['var' => 'background', 'label' => 'Hintergrund', 'type' => self::TYPE_TEXT],
                 [
                     'var' => 'title-heading',
                     'label' => 'Titel',
@@ -109,6 +110,11 @@ class BannerBlock extends PhpBlock
         return \Yii::$app->storage->getImage($this->getVarValue('image'));
     }
     
+    public function getBackground()
+    {
+        return $this->getCfgValue('background');
+    }
+    
     /**
      * @inheritdoc
      */
@@ -117,6 +123,7 @@ class BannerBlock extends PhpBlock
         return [
             'link' => $this->getLink(),
             'image' => $this->getImage(),
+            'background' => $this->getBackground(),
         ];
     }
     

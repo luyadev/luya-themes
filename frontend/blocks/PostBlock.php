@@ -58,13 +58,25 @@ class PostBlock extends PhpBlock
             'cfgs' => [
                 ['var' => 'htmlClass', 'label' => 'Html-Klasse', 'type' => self::TYPE_TEXT, 'initvalue' => 'post', 'placeholder' => 'post (default)'],
                 ['var' => 'imageHtmlClass', 'label' => 'Image Html-Klasse', 'type' => self::TYPE_TEXT, 'initvalue' => 'centered', 'placeholder' => 'centered (default)'],
+                [
+                    'var' => 'title-heading',
+                    'label' => 'Titel',
+                    'type' => self::TYPE_SELECT,
+                    'initValue' => 'h2',
+                    'options' => [
+                        ['value' => 'h1', 'label' => 'Heading 1'],
+                        ['value' => 'h2', 'label' => 'Heading 2'],
+                        ['value' => 'h3', 'label' => 'Heading 3'],
+                        ['value' => 'h4', 'label' => 'Heading 4'],
+                    ]
+                ],
             ],
             'vars' => [
                 ['var' => 'url', 'label' => 'URL', 'type' => self::TYPE_LINK],
+                ['var' => 'linkName', 'label' => 'Linkname', 'type' => self::TYPE_TEXT, 'placeholder' => '(optional)'],
                 ['var' => 'image', 'label' => 'Image', 'type' => self::TYPE_IMAGEUPLOAD],
                 ['var' => 'title', 'label' => 'Titel', 'type' => self::TYPE_TEXT, 'placeholder' => '(optional)'],
-                ['var' => 'text', 'label' => 'Text', 'type' => self::TYPE_TEXTAREA, 'placeholder' => '(optional)'],
-                ['var' => 'linkName', 'label' => 'Linkname', 'type' => self::TYPE_TEXT, 'placeholder' => '(optional)'],
+                ['var' => 'text', 'label' => 'Text', 'type' => self::TYPE_WYSIWYG, 'placeholder' => '(optional)'],
             ],
         ];
     }

@@ -61,10 +61,11 @@ class SectionBlock extends PhpBlock
     {
         return [
             'vars' => [
+                ['var' => 'disableWrapper', 'label' => \Yii::t('app', 'Disable wrapper'), 'initvalue' => false, 'type' => self::TYPE_CHECKBOX],
                 ['var' => 'useFlexContainer', 'label' => \Yii::t('app', 'Flex Container'), 'initvalue' => false, 'type' => self::TYPE_CHECKBOX],
             ],
             'cfgs' => [
-                ['var' => 'htmlClass', 'label' => 'Html-Klasse', 'initvalue' => null, 'type' => self::TYPE_TEXT],
+                ['var' => 'htmlClass', 'label' => 'Wrapper Html-Klasse', 'initvalue' => null, 'type' => self::TYPE_TEXT],
                 ['var' => 'containerHtmlClass', 'label' => 'Container Html-Klasse', 'initvalue' => 'container', 'type' => self::TYPE_TEXT],
             ],
             'placeholders' => [
