@@ -1,6 +1,6 @@
 # Themecollection Module
  
-Collection of blocks with some different themes.
+Collection of blocks with some different themes. In the `frontend` directory all basic blocks are located. And in the `themes` directory contains only the theme specificated stuff like layouts, css and some block views overrides.
 
 **Examples**
 
