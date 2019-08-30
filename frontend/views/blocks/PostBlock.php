@@ -50,7 +50,7 @@ if ($image) {
 
         <?php if ($text) : ?>
             <p>
-                <?php echo Html::encode($text) ?>
+                <?php echo $text ?>
             </p>
         <?php endif ?>
 
