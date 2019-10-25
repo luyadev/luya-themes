@@ -2,7 +2,7 @@
     "name": "boehsermoe/luya-themecollection",
     "type": "luya-theme",
     "require": {
-        "luyadev/luya-module-cms": "^2.0|^1.0",
+        "luyadev/luya-module-cms": "^3.0|dev-theme-loader-1916",
         "twbs/bootstrap": "^4.0"
     },
     "authors": [
