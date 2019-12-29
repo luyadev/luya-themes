@@ -1,6 +1,8 @@
 # Themecollection Module
  
-This module is a collection themes with some block which shared between the different themes. In the `frontend` directory all basic blocks are located. And in the `themes` directory contains only the theme specificated stuff like layouts, css and some block views overrides.
+This module is a collection themes with some block which shared between the different themes.
+
+The `frontend` directory contains the basic blocks and shared views and in the `themes` directory contains only the theme specificated stuff like layouts, css and some block views overrides.
 
 **Examples**
 
