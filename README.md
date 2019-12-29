@@ -19,10 +19,10 @@ return [
     'modules' => [
         // ...
         'themecollection' => [
-            'class' => 'boehsermoe\themecollection\frontend\Module',
+            'class' => 'luyadev\themes\frontend\Module',
             'useAppViewPath' => true, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
         ],
-        'themecollectionadmin' => 'boehsermoe\themecollection\admin\Module',
+        'themecollectionadmin' => 'luyadev\themes\admin\Module',
         // ...
     ],
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace boehsermoe\themecollection\frontend\blockgroups;
+namespace luyadev\themes\frontend\blockgroups;
 
 use luya\cms\base\BlockGroup;
 use luya\cms\frontend\Module;

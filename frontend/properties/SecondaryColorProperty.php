@@ -1,8 +1,8 @@
 <?php
 
-namespace boehsermoe\themecollection\frontend\properties;
+namespace luyadev\themes\frontend\properties;
 
-use boehsermoe\themecollection\frontend\Module;
+use luyadev\themes\frontend\Module;
 use luya\admin\base\Property;
 
 class SecondaryColorProperty extends Property

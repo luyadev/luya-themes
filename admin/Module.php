@@ -1,6 +1,6 @@
 <?php
 
-namespace boehsermoe\themecollection\admin;
+namespace luyadev\themes\admin;
 
 /**
  * Themecollection Admin Module.

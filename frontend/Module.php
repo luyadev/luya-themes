@@ -1,6 +1,6 @@
 <?php
 
-namespace boehsermoe\themecollection\frontend;
+namespace luyadev\themes\frontend;
 
 use Yii;
 

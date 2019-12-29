@@ -1,8 +1,8 @@
 <?php
 
-namespace boehsermoe\themecollection\frontend\blocks;
+namespace luyadev\themes\frontend\blocks;
 
-use boehsermoe\themecollection\frontend\blockgroups\BlockCollectionGroup;
+use luyadev\themes\frontend\blockgroups\BlockCollectionGroup;
 use luya\cms\base\PhpBlock;
 
 /**
