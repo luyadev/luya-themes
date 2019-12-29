@@ -29,6 +29,8 @@ return [
 
 To activate a theme you have to go to the admin area under *Settings > Themes*. For more information see https://luya.io/guide/app-themes
 
+**Optional**
+
 You can also set the active theme to the *themeManager* in the config section *components*.
 ```php
     // ...
