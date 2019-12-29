@@ -22,7 +22,6 @@ return [
             'class' => 'luya\themes\frontend\Module',
             'useAppViewPath' => true, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
         ],
-        'themesadmin' => 'luya\themes\admin\Module',
         // ...
     ],
 ];
