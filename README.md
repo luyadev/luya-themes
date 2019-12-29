@@ -1,4 +1,4 @@
-# Themecollection Module
+# Themes Module
  
 This module is a collection themes with some block which shared between the different themes.
 
