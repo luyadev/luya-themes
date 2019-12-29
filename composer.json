@@ -1,8 +1,8 @@
 {
-    "name": "boehsermoe/luya-themecollection",
+    "name": "luyadev/luya-themes",
     "type": "luya-theme",
     "require": {
-        "luyadev/luya-module-cms": "^3.0|dev-theme-loader-1916",
+        "luyadev/luya-module-cms": "^2.0|^1.0",
         "twbs/bootstrap": "^4.0"
     },
     "authors": [
@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"boehsermoe\\themecollection\\": ""}
+        "psr-4": {"luyadev\\luya-themes\\": ""}
     },
     "require-dev": {
         "unglue/client": "^1.4"
