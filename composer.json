@@ -2,7 +2,7 @@
     "name": "luyadev/luya-themes",
     "type": "luya-theme",
     "require": {
-        "luyadev/luya-module-cms": "^2.0|^1.0",
+        "luyadev/luya-module-cms": "^3.0|dev-master",
         "twbs/bootstrap": "^4.0"
     },
     "authors": [
