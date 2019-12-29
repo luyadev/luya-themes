@@ -1,6 +1,6 @@
 <?php
 
-namespace luyadev\themes\frontend;
+namespace luya\themes\frontend;
 
 use yii\web\View;
 

@@ -1,6 +1,6 @@
 # Themecollection Module
  
-Collection of blocks with some different themes. In the `frontend` directory all basic blocks are located. And in the `themes` directory contains only the theme specificated stuff like layouts, css and some block views overrides.
+This module is a collection themes with some block which shared between the different themes. In the `frontend` directory all basic blocks are located. And in the `themes` directory contains only the theme specificated stuff like layouts, css and some block views overrides.
 
 **Examples**
 
@@ -19,11 +19,23 @@ return [
     'modules' => [
         // ...
         'themes' => [
-            'class' => 'luyadev\themes\frontend\Module',
+            'class' => 'luya\themes\frontend\Module',
             'useAppViewPath' => true, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
         ],
-        'themesadmin' => 'luyadev\themes\admin\Module',
+        'themesadmin' => 'luya\themes\admin\Module',
         // ...
     ],
 ];
+```
+
+To activate a theme you have to go to the admin area under *Settings > Themes*. For more information see https://luya.io/guide/app-themes
+
+You can also set the active theme to the *themeManager* in the config section *components*.
+```php
+    // ...
+    'components' => [
+        'themeManager' => [
+            'activeThemeName' => dirname(__DIR__) . '/vendor/luyadev/luya-themes/themes/forty'
+        ],
+    // ...
 ```

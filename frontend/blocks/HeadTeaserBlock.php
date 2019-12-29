@@ -1,9 +1,9 @@
 <?php
 
-namespace luyadev\themes\frontend\blocks;
+namespace luya\themes\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
-use luyadev\themes\frontend\blockgroups\BlockCollectionGroup;
+use luya\themes\frontend\blockgroups\BlockCollectionGroup;
 
 /**
  * Head Teaser Block.

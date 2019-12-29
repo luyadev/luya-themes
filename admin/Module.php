@@ -1,6 +1,6 @@
 <?php
 
-namespace luyadev\themes\admin;
+namespace luya\themes\admin;
 
 /**
  * Themecollection Admin Module.

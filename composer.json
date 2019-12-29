@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"luyadev\\luya-themes\\": ""}
+        "psr-4": {"luya\\themes\\": ""}
     },
     "require-dev": {
         "unglue/client": "^1.4"

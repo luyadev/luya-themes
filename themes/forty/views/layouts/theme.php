@@ -2,7 +2,7 @@
 /**
  * @var $this \luya\web\View
  */
-use luyadev\themes\frontend\ResourcesAsset;
+use luya\themes\frontend\ResourcesAsset;
 
 ResourcesAsset::register($this);
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace luyadev\themes\frontend\properties;
+namespace luya\themes\frontend\properties;
 
-use luyadev\themes\frontend\Module;
+use luya\themes\frontend\Module;
 use luya\admin\base\Property;
 
 class PrimaryColorProperty extends Property
