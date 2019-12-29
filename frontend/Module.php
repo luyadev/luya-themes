@@ -16,10 +16,10 @@ class Module extends \luya\base\Module
 {
     public static function onLoad()
     {
-        Yii::setAlias('@themecollection', static::staticBasePath());
+        Yii::setAlias('@luyathemes', static::staticBasePath());
     
-        self::registerTranslation('themecollection*', '@themecollection/messages', [
-            'themecollection' => 'themecollection.php',
+        self::registerTranslation('luyathemes*', '@luyathemes/messages', [
+            'luyathemes' => 'luyathemes.php',
         ]);
         
         parent::onLoad();
@@ -27,6 +27,6 @@ class Module extends \luya\base\Module
     
     public static function t($message, array $params = [], $language = null)
     {
-        return parent::baseT('themecollection', $message, $params, $language);
+        return parent::baseT('luyathemes', $message, $params, $language);
     }
 }

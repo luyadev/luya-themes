@@ -12,7 +12,7 @@ use luyadev\themes\frontend\blockgroups\BlockCollectionGroup;
  */
 class HeadTeaserBlock extends PhpBlock
 {
-    public $module = 'themecollection';
+    public $module = 'luyathemes';
     
     /**
      * @var boolean Choose whether block is a layout/container/segmnet/section block or not, Container elements will be optically displayed

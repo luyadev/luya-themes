@@ -13,7 +13,7 @@ use luya\TagParser;
  */
 class PostBlock extends PhpBlock
 {
-    public $module = 'themecollection';
+    public $module = 'luyathemes';
     
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.

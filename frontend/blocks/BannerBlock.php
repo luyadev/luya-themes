@@ -12,7 +12,7 @@ use luyadev\themes\frontend\blockgroups\BlockCollectionGroup;
  */
 class BannerBlock extends PhpBlock
 {
-    public $module = 'themecollection';
+    public $module = 'luyathemes';
     
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
