@@ -29,7 +29,9 @@ return [
 ];
 ```
 
-To activate a theme you have to go to the admin area under *Settings > Themes*. For more information see https://luya.io/guide/app-themes
+To activate a theme you have to go to the admin area under *Settings > Themes*. All installed themes will be listed here and you can choose your active theme. 
+
+For more information see https://luya.io/guide/app-themes
 
 **Optional**
 
