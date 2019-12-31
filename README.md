@@ -5,9 +5,6 @@
 # LUYA Themes module
 
 [![LUYA](https://img.shields.io/badge/Powered%20by-LUYA-brightgreen.svg)](https://luya.io)
-[![Build Status](https://travis-ci.org/luyadev/luya-themes.svg?branch=master)](https://travis-ci.org/luyadev/luya-themes)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/26ce6892fcb4899cbd49/test_coverage)](https://codeclimate.com/github/luyadev/luya-themes/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/26ce6892fcb4899cbd49/maintainability)](https://codeclimate.com/github/luyadev/luya-themes/maintainability)
 [![Latest Stable Version](https://poser.pugx.org/luyadev/luya-themes/v/stable)](https://packagist.org/packages/luyadev/luya-themes)
 [![Total Downloads](https://poser.pugx.org/luyadev/luya-themes/downloads)](https://packagist.org/packages/luyadev/luya-themes)
 [![Slack Support](https://img.shields.io/badge/Slack-luyadev-yellowgreen.svg)](https://slack.luya.io/)
