@@ -20,7 +20,7 @@ The `frontend` directory contains the basic blocks and shared views and in the `
 For the installation of modules Composer is required.
 
 ```sh
-composer require luyadev/luya-theme:dev-master
+composer require luyadev/luya-themes:dev-master
 ```
 
 ### Configuration
