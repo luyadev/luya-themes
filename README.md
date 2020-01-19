@@ -17,10 +17,11 @@ The `frontend` directory contains the basic blocks and shared views and in the `
 
 ## Installation
 
-For the installation of modules Composer is required.
+For the installation of modules composer is required. This is a **work in progress** package and there fore requires `luyadev/luya-module-cms:dev-master` to work:
 
-```sh
-composer require luyadev/luya-themes:dev-master
+```
+"luyadev/luya-module-cms": "dev-master",
+"luyadev/luya-themes" : "dev-master"
 ```
 
 ### Configuration
