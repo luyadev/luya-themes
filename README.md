@@ -2,14 +2,14 @@
   <img src="https://raw.githubusercontent.com/luyadev/luya/master/docs/logo/luya-logo-0.2x.png" alt="LUYA Logo"/>
 </p>
 
-# LUYA Themes module
+# LUYA Themes
 
 [![LUYA](https://img.shields.io/badge/Powered%20by-LUYA-brightgreen.svg)](https://luya.io)
 [![Latest Stable Version](https://poser.pugx.org/luyadev/luya-themes/v/stable)](https://packagist.org/packages/luyadev/luya-themes)
 [![Total Downloads](https://poser.pugx.org/luyadev/luya-themes/downloads)](https://packagist.org/packages/luyadev/luya-themes)
 [![Slack Support](https://img.shields.io/badge/Slack-luyadev-yellowgreen.svg)](https://slack.luya.io/)
 
-This module is a collection themes with some block which shared between the different themes.
+This is a collection of LUYA themes with some block which are shared between the different themes.
 
 ![LUYA Themes management](https://github.com/luyadev/luya/raw/master/docs/guide/img/theme-management.png) 
 
