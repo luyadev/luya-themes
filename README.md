@@ -23,6 +23,21 @@ For the installation of modules composer is required. This is a **work in progre
 "luyadev/luya-module-cms": "dev-master",
 "luyadev/luya-themes" : "dev-master"
 ```
+### Configuration
+
+In order to add the properties to your project go into the modules section of your config:
+
+```php
+return [
+    'modules' => [
+        // ...
+        'themes' => [
+            'class' => 'luya\themes\frontend\Module',
+        ],
+        // ...
+    ],
+];
+```
 
 ### Initialization 
 
