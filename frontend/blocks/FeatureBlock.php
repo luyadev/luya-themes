@@ -4,13 +4,14 @@ namespace luya\themes\frontend\blocks;
 
 use luya\themes\frontend\blockgroups\BlockCollectionGroup;
 use luya\cms\base\PhpBlock;
+use luya\themes\frontend\BaseBlock;
 
 /**
  * Feature Block.
  *
  * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  */
-class FeatureBlock extends PhpBlock
+class FeatureBlock extends BaseBlock
 {
     public $module = 'luyathemes';
     

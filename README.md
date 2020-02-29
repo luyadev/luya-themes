@@ -17,26 +17,10 @@ The `frontend` directory contains the basic blocks and shared views and in the `
 
 ## Installation
 
-For the installation of modules composer is required. This is a **work in progress** package and there fore requires `luyadev/luya-module-cms:dev-master` to work:
+For the installation of modules composer is required:
 
 ```
-"luyadev/luya-module-cms": "dev-master",
-"luyadev/luya-themes" : "dev-master"
-```
-### Configuration
-
-In order to add the properties to your project go into the modules section of your config:
-
-```php
-return [
-    'modules' => [
-        // ...
-        'themes' => [
-            'class' => 'luya\themes\frontend\Module',
-        ],
-        // ...
-    ],
-];
+composer require luyadev/luya-themes:^1.0@dev
 ```
 
 ### Initialization 

@@ -3,14 +3,16 @@
 namespace luya\themes\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
+use luya\themes\frontend\BaseBlock;
 use luya\themes\frontend\blockgroups\BlockCollectionGroup;
+use luya\themes\frontend\Module;
 
 /**
  * Section Block.
  *
  * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  */
-class SectionBlock extends PhpBlock
+class SectionBlock extends BaseBlock
 {
     public $module = 'luyathemes';
     
@@ -61,8 +63,8 @@ class SectionBlock extends PhpBlock
     {
         return [
             'vars' => [
-                ['var' => 'disableWrapper', 'label' => \Yii::t('app', 'Disable wrapper'), 'initvalue' => false, 'type' => self::TYPE_CHECKBOX],
-                ['var' => 'useFlexContainer', 'label' => \Yii::t('app', 'Flex Container'), 'initvalue' => false, 'type' => self::TYPE_CHECKBOX],
+                ['var' => 'disableWrapper', 'label' => Module::t('Disable wrapper'), 'initvalue' => false, 'type' => self::TYPE_CHECKBOX],
+                ['var' => 'useFlexContainer', 'label' => Module::t('Flex Container'), 'initvalue' => false, 'type' => self::TYPE_CHECKBOX],
             ],
             'cfgs' => [
                 ['var' => 'htmlClass', 'label' => 'Wrapper Html-Klasse', 'initvalue' => null, 'type' => self::TYPE_TEXT],

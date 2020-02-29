@@ -3,6 +3,7 @@
 namespace luya\themes\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
+use luya\themes\frontend\BaseBlock;
 use luya\themes\frontend\blockgroups\BlockCollectionGroup;
 
 /**
@@ -10,7 +11,7 @@ use luya\themes\frontend\blockgroups\BlockCollectionGroup;
  *
  * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  */
-class BannerBlock extends PhpBlock
+class BannerBlock extends BaseBlock
 {
     public $module = 'luyathemes';
     

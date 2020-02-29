@@ -1,10 +1,6 @@
 {
     "name": "luyadev/luya-themes",
     "type": "luya-theme",
-    "require": {
-        "luyadev/luya-module-cms": "dev-master",
-        "twbs/bootstrap": "^4.0"
-    },
     "authors": [
         {
             "name": "boehsermoe",
@@ -14,8 +10,13 @@
     "autoload": {
         "psr-4": {"luya\\themes\\": ""}
     },
+    "require": {
+        "luyadev/luya-module-cms": ">=3.0"
+    },
     "require-dev": {
-        "unglue/client": "^1.4"
+        "unglue/client": "^1.4",
+        "twbs/bootstrap": "^4.0",
+        "luyadev/luya-testsuite" : "^1.0"
     },
     "extra": {
         "luya": {
@@ -23,6 +24,9 @@
                 "themes/escapeVelocity",
                 "themes/forty"
             ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
         }
     }
 }
