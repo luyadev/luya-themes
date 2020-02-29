@@ -11,6 +11,6 @@ abstract class BaseBlock extends PhpBlock
      */
     public function getViewPath()
     {
-        return  dirname(__DIR__) . '/views/blocks';
+        return  dirname(__DIR__) . '/frontend/views/blocks';
     }
 }
