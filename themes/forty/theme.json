@@ -2,7 +2,7 @@
     "name": "forty",
     "parentTheme": null,
     "pathMap": [
-        "@luyathemes/views"
+        "views"
     ],
     "description": null
 }

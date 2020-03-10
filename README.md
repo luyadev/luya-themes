@@ -23,38 +23,11 @@ For the installation of modules composer is required:
 composer require luyadev/luya-themes:^1.0@dev
 ```
 
-### Configuration	
-
-In order to add the properties to your project go into the modules section of your config:	
-
-```php	
-return [	
-    'modules' => [	
-        // ...	
-        'themes' => [	
-            'class' => 'luya\themes\frontend\Module',	
-        ],	
-        // ...	
-    ],	
-];
-
 ### Initialization 
 
 After successfully installation and configuration, activate a theme in the admin area under *Settings > Themes*. All installed themes will be listed here and you can choose your active theme. 
 
 For more information see https://luya.io/guide/app-themes
-
-**Optional**
-
-You can also set the active theme to the *themeManager* in the config section *components*.
-```php
-    // ...
-    'components' => [
-        'themeManager' => [
-            'activeThemeName' => dirname(__DIR__) . '/vendor/luyadev/luya-themes/themes/forty'
-        ],
-    // ...
-```
 
 ## Examples
 

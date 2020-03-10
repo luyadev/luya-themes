@@ -1,6 +1,6 @@
 {
     "name": "Escape Velocity",
     "pathMap": [
-        "@luyathemes/views"
+        "views"
     ]
 }
