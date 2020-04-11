@@ -1,0 +1,3 @@
+<main>
+    <?= $placeholders['main'] ?>
+</main>

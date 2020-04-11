@@ -1,0 +1,15 @@
+{
+
+  "css": [
+    "../resources/scss/strata.scss"
+  ],
+
+  "js": [
+  ],
+
+  "options": {
+    "compress": false,
+    "maps": true
+  }
+
+}

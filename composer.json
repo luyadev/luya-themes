@@ -22,7 +22,8 @@
         "luya": {
             "themes": [
                 "themes/escapeVelocity",
-                "themes/forty"
+                "themes/forty",
+                "themes/strata"
             ],
             "blocks": [
                 "frontend/blocks"
