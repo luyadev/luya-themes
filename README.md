@@ -20,7 +20,7 @@ The `frontend` directory contains the basic blocks and shared views and in the `
 For the installation of modules composer is required:
 
 ```
-composer require luyadev/luya-themes:^1.0@dev
+composer require luyadev/luya-themes:^1.0
 ```
 
 ### Initialization 
@@ -29,7 +29,13 @@ After successfully installation and configuration, activate a theme in the admin
 
 For more information see https://luya.io/guide/app-themes
 
-## Examples
+## Available themes
+
+- Escape Velocity [themes/escapeVelocity](./themes/escapeVelocity)
+- Forty [themes/forty](./themes/forty)
+- Strata [themes/strata](./themes/strata)
+
+## Demo
 
 + [Forty](http://forty.bennetklarhoelter.de/)
 
