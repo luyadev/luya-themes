@@ -6,6 +6,8 @@ use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\ProjectGroup;
 use luya\cms\helpers\BlockHelper;
 use luya\cms\models\NavContainer;
+use luya\themes\frontend\blockgroups\BlockCollectionGroup;
+use luya\themes\frontend\Module;
 
 /**
  * Menu Block.
@@ -14,6 +16,8 @@ use luya\cms\models\NavContainer;
  */
 class MenuBlock extends PhpBlock
 {
+    public $module = 'luyathemes';
+
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
      */
@@ -29,7 +33,7 @@ class MenuBlock extends PhpBlock
      */
     public function blockGroup()
     {
-        return ProjectGroup::class;
+        return BlockCollectionGroup::class;
     }
 
     /**
@@ -56,7 +60,7 @@ class MenuBlock extends PhpBlock
         $containers = NavContainer::find()->asArray()->select(['label' => 'name', 'value' => 'alias'])->all();
         return [
             'vars' => [
-                 ['var' => 'container', 'label' => 'Container', 'type' => self::TYPE_SELECT, 'options' => BlockHelper::selectArrayOption($containers)],
+                 ['var' => 'container', 'label' => Module::t('Container'), 'type' => self::TYPE_SELECT, 'options' => BlockHelper::selectArrayOption($containers)],
             ],
         ];
     }
