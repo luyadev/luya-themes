@@ -181,6 +181,11 @@ footer {
 img {
     &.img-responsive {
         width: 100%;
+
+        @media screen and (min-width: 980px) {
+            width: auto;
+            max-width: 100%;
+        }
     }
 }
 
