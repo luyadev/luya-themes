@@ -182,7 +182,7 @@ img {
     &.img-responsive {
         width: 100%;
 
-        @media screen and (min-width: 980px) {
+        @media screen and (min-width: 768px) {
             width: auto;
             max-width: 100%;
         }
@@ -192,6 +192,7 @@ img {
 .image {
     figure {
         margin: 0;
+        text-align: center;
     }
 }
 
@@ -226,6 +227,8 @@ nav {
         .nav-item {
             border-left: solid 1px rgba(255, 255, 255, 0.25);
             display: inline-block;
+            margin-left: 0.75em;
+            padding-left: 0.75em;
 
             @media screen and (min-width: 980px) {
                 border-left-width: 0;
@@ -248,11 +251,12 @@ nav {
 
     .nav-item {
         line-height: 1em;
-        margin-left: 0.75em;
-        padding-left: 0.75em;
+        display: inline-block;
+        margin-left: 5px;
 
         @media screen and (min-width: 980px) {
             line-height: 2.25em;
+            display: block;
         }
 
         a {
