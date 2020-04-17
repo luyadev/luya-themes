@@ -1,0 +1,28 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    appearance: none;
+    background: #f7f7f7;
+    border-radius: 0.35em;
+    border: solid 2px transparent;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 0.75em;
+    text-decoration: none;
+    width: 100%;
+
+    &:focus {
+        border-color: #49bf9d;
+    }
+}
+
+.form-group {
+    margin-bottom: 1em;
+
+    &.has-error {
+        color: #e60000;
+    }
+}
