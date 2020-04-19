@@ -270,3 +270,11 @@ nav {
         }
     }
 }
+
+ul {
+    list-style: none;
+
+    @media screen and (min-width: 980px) {
+        list-style: inherit;
+    }
+}
