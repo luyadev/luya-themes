@@ -212,6 +212,8 @@ img {
 
 nav {
     padding: 0 2em;
+    z-index: 1;
+    text-align: center;
 
     @media screen and (min-width: 980px) {
         background-color: transparent;

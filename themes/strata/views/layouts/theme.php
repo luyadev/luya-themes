@@ -28,6 +28,7 @@ $this->beginPage();
     <?php $this->beginBody() ?>
 
     <?php echo $this->render('_header') ?>
+    <?php echo $this->render('_nav') ?>
     <?= $content ?>
     <?php echo $this->render('_footer') ?>
 
