@@ -23,7 +23,8 @@
             "themes": [
                 "themes/escapeVelocity",
                 "themes/forty",
-                "themes/strata"
+                "themes/strata",
+                "themes/story"
             ],
             "blocks": [
                 "frontend/blocks"

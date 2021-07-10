@@ -57,7 +57,7 @@ class MenuBlock extends PhpBlock
      */
     public function config()
     {
-        $containers = NavContainer::find()->asArray()->select(['label' => 'name', 'value' => 'alias'])->all();
+        $containers = NavContainer::ngRestFind()->asArray()->select(['label' => 'name', 'value' => 'alias'])->all();
         return [
             'vars' => [
                  ['var' => 'container', 'label' => Module::t('Container'), 'type' => self::TYPE_SELECT, 'options' => BlockHelper::selectArrayOption($containers)],
