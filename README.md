@@ -9,7 +9,7 @@
 [![Total Downloads](https://poser.pugx.org/luyadev/luya-themes/downloads)](https://packagist.org/packages/luyadev/luya-themes)
 [![Slack Support](https://img.shields.io/badge/Slack-luyadev-yellowgreen.svg)](https://slack.luya.io/)
 
-This is a collection of LUYA themes with some block which are shared between the different themes.
+This is a collection of LUYA themes with some blocks which are shared between the different themes.
 
 ![LUYA Themes management](https://github.com/luyadev/luya/raw/master/docs/guide/img/theme-management.png) 
 
@@ -27,7 +27,7 @@ composer require luyadev/luya-themes:^1.0
 
 After successfully installation and configuration, activate a theme in the admin area under *Settings > Themes*. All installed themes will be listed here and you can choose your active theme. 
 
-For more information see https://luya.io/guide/app-themes
+For more information see https://luya.io/guide/app-themes.
 
 ## Available themes
 
@@ -37,11 +37,10 @@ For more information see https://luya.io/guide/app-themes
 
 ## Demo
 
-+ [Forty](http://forty.bennetklarhoelter.de/)
-
-Login: mail@demo.de
-
-Password: luya
+- [Forty](http://forty.bennetklarhoelter.de/)
+- [Admin login](http://forty.bennetklarhoelter.de/admin)
+  - Email: `mail@demo.de`
+  - Password: `luya`
 
 ## Developers
 
