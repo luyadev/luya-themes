@@ -59,23 +59,14 @@ class BannerBlock extends BaseBlock
                 ['var' => 'title', 'label' => 'Titel', 'type' => self::TYPE_TEXT],
                 ['var' => 'subTitle', 'label' => 'Untertitel', 'type' => self::TYPE_TEXT],
                 ['var' => 'url', 'label' => 'URL', 'type' => self::TYPE_LINK],
-                ['var' => 'text', 'label' => 'Text', 'type' => self::TYPE_TEXTAREA],
+                ['var' => 'text', 'label' => 'Text', 'type' => self::TYPE_WYSIWYG],
                 ['var' => 'buttonName', 'label' => 'Buttonname', 'type' => self::TYPE_TEXT],
                 ['var' => 'image', 'label' => 'Image', 'type' => self::TYPE_IMAGEUPLOAD],
             ],
             'cfgs' => [
-                [
-                    'var' => 'background-type',
-                    'label' => 'Hintergrund-Typ',
-                    'type' => self::TYPE_SELECT,
-                    'initValue' => 'image',
-                    'options' => [
-                        ['value' => 'color', 'label' => 'Farbe'],
-                        ['value' => 'image', 'label' => 'Bild'],
-                        ['value' => 'video', 'label' => 'Video'],
-                    ],
-                ],
-                ['var' => 'background', 'label' => 'Hintergrund', 'type' => self::TYPE_TEXT],
+                ['var' => 'background-color', 'label' => 'Hintergrund Color', 'type' => self::TYPE_COLOR],
+                ['var' => 'background-image', 'label' => 'Hintergrund Image', 'type' => self::TYPE_IMAGEUPLOAD],
+                ['var' => 'background-video', 'label' => 'Hintergrund Video', 'type' => self::TYPE_FILEUPLOAD],
                 [
                     'var' => 'title-heading',
                     'label' => 'Titel',
@@ -111,9 +102,20 @@ class BannerBlock extends BaseBlock
         return \Yii::$app->storage->getImage($this->getVarValue('image'));
     }
     
-    public function getBackground()
+    public function getBackgroundStyle()
     {
-        return $this->getCfgValue('background');
+        $color = $this->getCfgValue('background-color', '');
+    
+        $imageId = $this->getCfgValue('background-image');
+        if ($imageId) {
+            $imageStorage = \Yii::$app->storage->getImage($imageId);
+            $image = "url('$imageStorage->source')";
+        }
+    
+        return [
+            'background-color' => $color,
+            'background-image' => $image
+        ];
     }
     
     /**
@@ -124,7 +126,7 @@ class BannerBlock extends BaseBlock
         return [
             'link' => $this->getLink(),
             'image' => $this->getImage(),
-            'background' => $this->getBackground(),
+            'background-style' => $this->getBackgroundStyle(),
         ];
     }
     

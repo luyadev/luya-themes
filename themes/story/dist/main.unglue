@@ -1,0 +1,20 @@
+{
+
+  "css": [
+    "../resources/scss/story.scss"
+  ],
+
+  "js": [
+    "../resources/js/jquery.min.js",
+    "../resources/js/util.js",
+    "../resources/js/breakpoints.min.js",
+    "../resources/js/browser.min.js",
+    "../resources/js/story.js"
+  ],
+
+  "options": {
+    "compress": false,
+    "maps": true
+  }
+
+}

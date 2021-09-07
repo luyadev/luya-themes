@@ -1,0 +1,6 @@
+<?php
+?>
+
+<footer>
+
+</footer>

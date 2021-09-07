@@ -1,6 +1,8 @@
 {
     "name": "story",
     "parentTheme": null,
-    "pathMap": [],
+    "pathMap": [
+        "views"
+    ],
     "description": null
 }
