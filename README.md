@@ -27,7 +27,7 @@ composer require luyadev/luya-themes:^1.0
 
 After successfully installation and configuration, activate a theme in the admin area under *Settings > Themes*. All installed themes will be listed here and you can choose your active theme. 
 
-For more information see https://luya.io/guide/app-themes.
+For more information see https://luya.io/guide/app/themes.html.
 
 ## Available themes
 
@@ -35,13 +35,6 @@ For more information see https://luya.io/guide/app-themes.
 - Forty [themes/forty](./themes/forty)
 - Strata [themes/strata](./themes/strata)
 
-## Demo
-
-- [Forty](http://forty.bennetklarhoelter.de/)
-- [Admin login](http://forty.bennetklarhoelter.de/admin)
-  - Email: `mail@demo.de`
-  - Password: `luya`
-
 ## Developers
 
-If you want to contribute, make sure to read the following guidelines: https://luya.io/guide/luya-guideline.
+If you want to contribute, make sure to read the following guidelines: https://luya.io/guide/dev/guideline.html.
